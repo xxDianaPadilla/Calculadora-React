@@ -1,20 +1,15 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Input from './components/Input'
-import Button from './components/Button'
+import Calculadora from './components/Calculadora'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-     <Input titulo={"Ingresa un número"}></Input> 
-     <br/>
-     <Input titulo={"Ingresa otro número"}></Input>
-     <br />
-     <Button titulo={"Calcular resultado"}></Button>
+     <h1>Hook UseState</h1>
+
+     <Calculadora/>
+
     </>
   )
 }
