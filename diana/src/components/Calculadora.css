@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
     padding: 20px;
     background-color: #f9f9f9;
@@ -30,6 +30,12 @@
     font-weight: bold;
 }
 
+#buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
 .calculadora button {
     padding: 10px 20px;
     font-size: 1rem;
@@ -50,4 +56,48 @@
     font-size: 2rem;
     color: #333;
     font-weight: bold;
+}
+
+#btnRestar{
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ee2e31;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btnMultiplicar{
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #64113f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btnDividir{
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #07beb8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btnLimpiar{
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #bb9f06;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }

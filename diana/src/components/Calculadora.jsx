@@ -12,6 +12,26 @@ const Calculadora = () => {
         setResultado(suma);
     };
 
+    const handleRestar = () => {
+        const resta = parseFloat(num1) - parseFloat(num2);
+        setResultado(resta);
+    };
+
+    const handleMultiplicar = () => {
+        const multiplicar = parseFloat(num1) * parseFloat(num2);
+        setResultado(multiplicar);
+    };
+
+    const handleDividir = () => {
+        const dividir = parseFloat(num1) / parseFloat(num2);
+        setResultado(dividir);
+    };
+
+    const limpiarCampos = () =>{
+        setNum1("");
+        setNum2("");
+    }
+
     return (
         <div className="calculadora">
             <h1>Calculadora</h1>
@@ -27,7 +47,13 @@ const Calculadora = () => {
                 value={num2}
                 onChange={(e) => setNum2(e.target.value)}
             />
-            <button onClick={handleSumar}>Sumar</button>
+            <div id='buttons'>
+               <button onClick={handleSumar}>Sumar</button>
+               <button id='btnRestar' onClick={handleRestar}>Restar</button>
+               <button id='btnMultiplicar' onClick={handleMultiplicar}>Multiplicar</button>
+               <button id='btnDividir' onClick={handleDividir}>Dividir</button>
+               <button id='btnLimpiar' onClick={limpiarCampos}>Limpiar</button>
+            </div>
             {resultado !== null && <p>Resultado: {resultado}</p>}
         </div>
     );
